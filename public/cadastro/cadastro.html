@@ -1,0 +1,151 @@
+<br><br>
+<div class="container">
+
+  <h2>Voce deseja se cadastrar como ?</h2>
+  <button type="button" class="btn btn-primary btn-lg" ng-click="cadastro.escolhaTipo('professor')">Professor</button>
+  <button type="button" class="btn btn-primary btn-lg" ng-click="cadastro.escolhaTipo('aluno')">Aluno</button>
+
+</div>
+
+<div class="container col-md-6 col-sm-12 col-md-offset-3">
+
+  <form ng-show="cadastro.professorShow">
+    <br><br>
+    <div class="form-group">
+      <label class="pull-left">Nome</label>
+      <input type="text" class="form-control" name="nome" placeholder="Nome" ng-model="cadastro.professorModel.nome">
+    </div>
+    <div class="form-group">
+      <label class="pull-left">Email</label>
+      <input type="email" class="form-control" name="email" placeholder="Email" ng-model="cadastro.professorModel.email">
+    </div>
+    <div class="form-group">
+      <label class="pull-left">Senha</label>
+      <input type="password" class="form-control" name="password" placeholder="Senha" ng-model="cadastro.professorModel.senha">
+    </div>
+    <div class="form-group">
+      <div class="col-md-9" style="padding-left:0;">
+        <label class="pull-left">Rua</label>
+        <input type="text" class="form-control" name="rua" placeholder="Rua" ng-model="cadastro.professorModel.rua">
+      </div>
+      <div class="col-md-3" style="padding-right:0;">
+        <label class="pull-left">Numero</label>
+        <input type="text" class="form-control" name="numero" placeholder="Numero" ng-model="cadastro.professorModel.numero">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-6" style="padding-left:0;">
+        <label class="pull-left">Complemento</label>
+        <input type="text" class="form-control" name="complemento" placeholder="Complemento" ng-model="cadastro.professorModel.complemento">
+      </div>
+      <div class="col-md-6" style="padding-right:0;">
+        <label class="pull-left">Bairro</label>
+        <input type="text" class="form-control" name="bairro" placeholder="Bairro" ng-model="cadastro.professorModel.bairro">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-9" style="padding-left:0;">
+        <label class="pull-left">Cidade</label>
+        <input type="text" class="form-control" name="cidade" placeholder="Cidade" ng-model="cadastro.professorModel.cidade">
+      </div>
+      <div class="col-md-3" style="padding-right:0;">
+        <label class="pull-left">Estado</label>
+        <input type="text" class="form-control" name="estado" placeholder="Estado" ng-model="cadastro.professorModel.estado">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-6" style="padding-left:0;">
+        <label class="pull-left">Cep</label>
+        <input type="text" class="form-control" name="cep" placeholder="Cep" ng-model="cadastro.professorModel.cep">
+      </div>
+      <div class="col-md-6" style="padding-right:0;">
+        <label class="pull-left">Cpf</label>
+        <input type="text" class="form-control" name="cpf" placeholder="Cpf" ng-model="cadastro.professorModel.cpf">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-4" style="padding-left:0;">
+        <label class="pull-left">Banco</label>
+        <input type="text" class="form-control" name="banco" placeholder="Banco" ng-model="cadastro.professorModel.banco">
+      </div>
+      <div class="col-md-4">
+        <label class="pull-left">Agencia</label>
+        <input type="text" class="form-control" name="agencia" placeholder="Agencia" ng-model="cadastro.professorModel.agencia">
+      </div>
+      <div class="col-md-4" style="padding-right:0;">
+        <label class="pull-left">Conta</label>
+        <input type="text" class="form-control" name="Conta" placeholder="conta" ng-model="cadastro.professorModel.conta">
+      </div>
+    </div>
+
+    <div class="pull-right">
+      <br>
+      <button type="submit" class="btn btn-default" ng-click="cadastro.salvarProfessor(cadastro.professorModel)">Enviar</button>
+    </div>
+    <br>
+  </form>
+
+  <form ng-show="cadastro.alunoShow">
+
+    <br><br>
+    <div class="form-group">
+      <label class="pull-left">Nome</label>
+      <input type="text" class="form-control" name="nome" placeholder="Nome" ng-model="cadastro.alunoModel.nome">
+    </div>
+    <div class="form-group">
+      <label class="pull-left">Email</label>
+      <input type="email" class="form-control" name="email" placeholder="Email" ng-model="cadastro.alunoModel.email">
+    </div>
+    <div class="form-group">
+      <label class="pull-left">Senha</label>
+      <input type="password" class="form-control" name="password" placeholder="Senha" ng-model="cadastro.alunoModel.senha">
+    </div>
+    <div class="form-group">
+      <div class="col-md-9" style="padding-left:0;">
+        <label class="pull-left">Rua</label>
+        <input type="text" class="form-control" name="rua" placeholder="Rua" ng-model="cadastro.alunoModel.rua">
+      </div>
+      <div class="col-md-3" style="padding-right:0;">
+        <label class="pull-left">Numero</label>
+        <input type="text" class="form-control" name="numero" placeholder="Numero" ng-model="cadastro.alunoModel.numero">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-6" style="padding-left:0;">
+        <label class="pull-left">Complemento</label>
+        <input type="text" class="form-control" name="complemento" placeholder="Complemento" ng-model="cadastro.alunoModel.complemento">
+      </div>
+      <div class="col-md-6" style="padding-right:0;">
+        <label class="pull-left">Bairro</label>
+        <input type="text" class="form-control" name="bairro" placeholder="Bairro" ng-model="cadastro.alunoModel.bairro">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-9" style="padding-left:0;">
+        <label class="pull-left">Cidade</label>
+        <input type="text" class="form-control" name="cidade" placeholder="Cidade" ng-model="cadastro.alunoModel.cidade">
+      </div>
+      <div class="col-md-3" style="padding-right:0;">
+        <label class="pull-left">Estado</label>
+        <input type="text" class="form-control" name="estado" placeholder="Estado" ng-model="cadastro.alunoModel.estado">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-md-6" style="padding-left:0;">
+        <label class="pull-left">Cep</label>
+        <input type="text" class="form-control" name="cep" placeholder="Cep" ng-model="cadastro.alunoModel.cep">
+      </div>
+      <div class="col-md-6" style="padding-right:0;">
+        <label class="pull-left">Cpf</label>
+        <input type="text" class="form-control" name="cpf" placeholder="Cpf" ng-model="cadastro.alunoModel.cpf">
+      </div>
+    </div>
+
+    <div class="pull-right">
+      <br>
+      <button type="submit" class="btn btn-default" ng-click="cadastro.salvarAluno(cadastro.alunoModel)">Enviar</button>
+    </div>
+    <br>
+  </form>
+
+</div>

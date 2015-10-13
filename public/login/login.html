@@ -1,0 +1,20 @@
+<div class="container">
+  <br>
+  <br>
+    <div class="well col-md-6 col-md-offset-3">
+      <form>
+        <div class="form-group">
+          <label class="pull-left">Email</label>
+          <input type="email" class="form-control" placeholder="Email" ng-model="login.user.email">
+        </div>
+        <div class="form-group">
+          <label class="pull-left">Senha</label>
+          <input type="password" class="form-control" placeholder="Senha" ng-model="login.user.senha">
+        </div>
+        <div class="pull-right">
+          <button type="submit" class="btn btn-default" ng-click="login.logar(login.user)">Logar</button>
+        </div>
+
+      </form>
+    </div>
+</div>
