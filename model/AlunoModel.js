@@ -1,39 +1,39 @@
-var sequelize = require('../db/postgresql');
-var Sequelize = require('sequelize');
+var db = require('../db/postgresql');
+var sequelize = require('sequelize');
 
-var alunoModel = sequelize.define('aluno',{
+var alunoModel = db.define('aluno',{
     nome:{
-        type: Sequelize.STRING
+        type: sequelize.STRING
     },
     email:{
-        type: Sequelize.STRING
+        type: sequelize.STRING
     },
     senha:{
-        type: Sequelize.STRING
+        type: sequelize.STRING
     },
     rua:{
-        type: Sequelize.STRING
+        type: sequelize.STRING
     },
     numero:{
-        type: Sequelize.STRING
+        type: sequelize.STRING
     },
     complemento:{
-        type: Sequelize.STRING
+        type: sequelize.STRING
     },
     bairro:{
-        type: Sequelize.STRING
+        type: sequelize.STRING
     },
     cidade:{
-        type: Sequelize.STRING
+        type: sequelize.STRING
     },
     estado:{
-        type: Sequelize.STRING
+        type: sequelize.STRING
     },
     cep:{
-        type: Sequelize.STRING
+        type: sequelize.STRING
     },
     cpf:{
-        type: Sequelize.STRING
+        type: sequelize.STRING
     }
 }, {
   freezeTableName: true,
