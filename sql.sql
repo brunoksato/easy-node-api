@@ -15,7 +15,7 @@ CREATE TABLE professor(
 	cpf VARCHAR(11) NOT NULL,
 	banco VARCHAR(50) NOT NULL,
 	agencia VARCHAR(50) NOT NULL,
-  conta VARCHAR(50) NOT NULL
+        conta VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE aluno(
